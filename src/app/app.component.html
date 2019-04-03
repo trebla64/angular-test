@@ -33,7 +33,7 @@
             </p>
           </mat-card-content>
           <mat-card-actions>
-            <button mat-button>LIKE</button>
+            <button mat-button (click)="openSnackBar(tile.text)">LIKE</button>
           </mat-card-actions>
         </mat-card>
       </mat-grid-tile>

@@ -22,4 +22,12 @@ export class AppComponent {
     {text: 'Orange', cols: 1, rows: 2, color: 'lightblue', image: 'https://res.cloudinary.com/du3klmijx/image/upload/v1554304273/Orange_A-Z_Fruit19.jpg'},
     {text: 'Pineapple', cols: 1, rows: 2, color: 'lightblue', image: 'https://res.cloudinary.com/du3klmijx/image/upload/v1554304288/Pineapple_A-Z_Fruit21.jpg'},
   ];
+
+  constructor(private snackBar: MatSnackBar) {}
+
+  openSnackBar(message: string) {
+      this.snackBar.open(`You like ${message}s`, 'OK', {
+          duration: 2000
+      });
+  }
 }
