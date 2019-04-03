@@ -9,7 +9,12 @@
 <i class="material-icons">face</i>
 
 <mat-tab-group>
-  <mat-tab label="List">Content 1</mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons">view_list</i> List
+    </ng-template>
+      Content 1
+  </mat-tab>
   <mat-tab>
     <ng-template mat-tab-label>
       <i class="material-icons">view_module</i> Grid
